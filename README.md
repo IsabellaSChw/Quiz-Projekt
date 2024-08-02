@@ -1,1 +1,1 @@
-# Quiz-Projekt
+# Quiz-Projekt Gruppe 6
