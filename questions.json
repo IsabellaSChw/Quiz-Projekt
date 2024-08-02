@@ -1,0 +1,64 @@
+[
+    {   "category": "yes-no",
+        "question": "Ist die Hauptstadt von Spanien Rom?",
+        "answers": ["Ja", "Nein"],
+        "correctAnswer": [1]
+    },
+    {
+        "category": "sorm-choice",
+        "question": "Welche boolsche Operation entpricht dem Ergebnis True",
+        "answers": ["True and False", "True or False", "True and True", "True not True"],
+        "correctAnswer": [1, 2]
+    },
+    {   "category": "sorm-choice",
+        "question": "Wie viele Planeten gibt es in unserem Sonnensystem?",
+        "answers": ["7", "8", "9", "10"],
+        "correctAnswer": [1]
+    },
+    {   "category": "guess",
+        "question": "Wie viele Kontinente gibt es auf der Erde?",
+        "tolerance": 1,
+        "correctAnswer": 7
+    },
+    {   "category": "guess",
+        "question": "Wie lautet die Zahl eulersche Zahl auf 2 Nachkommastellen genau?",
+        "tolerance": 0.01,
+        "correctAnswer": 2.71
+    },
+    {
+        "category": "sorm-choice",
+        "question": "Was ist der längste Fluss der Welt?",
+        "answers": ["Der Nil", "Der Amazonas", "Der Rhein", "Der Donau"],
+        "correctAnswer": [0]
+    },
+
+    {   "category": "yes-no",
+        "question": "Die Null hat die Farbe Grün auf einer klassischen Roulette-Scheibe?",
+        "answers": ["Ja", "Nein"],
+        "correctAnswer": [0]
+    },
+
+    {   "category": "guess",
+        "question": "Wie viel Tasten hat ein Klavier?",
+        "tolerance": 1,
+        "correctAnswer": 88
+    },
+    {   "category": "yes-no",
+        "question": "Ein Wissenschaftler, der sich mit dem Weltall beschäftigt, nennt man Geologe",
+        "answers": ["Ja", "Nein"],
+        "correctAnswer": [1]
+    },
+    {
+        "category": "sorm-choice",
+        "question": "Welche Gürtelfarbe kannst du im Kampfsport Karate nicht verdienen?",
+        "answers": ["schwarz", "grün", "rot", "weiß"],
+        "correctAnswer": [2]
+    },
+
+    {
+        "category": "sorm-choice",
+        "question": "Welche von den Antworten ist eine Bedingung für eine Äquivalenzrelation ?",
+        "answers": ["Reflexivität", "Linearität", "Anti-Symmetrie", "Käsekuchen"],
+        "correctAnswer": [0]
+    }
+]

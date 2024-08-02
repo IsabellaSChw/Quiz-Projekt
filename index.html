@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAADIM</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="login-page" class="form-container">
+        <!-- Login-Page -->
+        <div class="Firsthalf">
+            <div class="image-layer">
+                <img src="RAADIM.jpeg" alt="RAADIM Logo">
+            </div>
+        </div>
+        <div class="second-Layer">
+            <form class="login-form" id="login-form">
+                <strong>Willkommen zum RAADIM Quiz!</strong>
+                <div class="inputs">
+                    <div class="inputbox">
+                        <input type="text" required pattern="^(?=.*[A-Za-zäöüÄÖÜß])[A-Za-zäöüÄÖÜß0-9]+$" class="form-control" placeholder="Benutzername angeben" id="username" required>
+                    </div>
+                    <div class="inputbox">
+                        <button type="submit" class="input-submit">
+                            <span>Quiz beitreten</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Waiting Room -->
+    <div id="waiting-page" class="card p-4 shadow-lg w-100 hidden">
+        <div class="text-center">
+            <h1 class="mb-4">Warten auf den Admin...</h1>
+            <p id="status">Verbindung zum Server wird hergestellt...</p>
+            <button id="start-quiz-btn" class="btn btn-primary mt-4 hidden">Quiz Starten</button>
+        </div>
+        <hr>
+        <div id="user-table" class="mt-4">
+            <h3>Player-Liste</h3>
+            <table class="table table-striped w-100">
+                <thead>
+                    <tr>
+                        <th>Benutzername</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list"></tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Single, multiple, yes and no questions page -->
+    <div id="choice" class="card p-4 shadow-lg w-100 hidden">
+        <h1 class="text-center mb-4" id="question"></h1>
+        <div id="choice-timer"></div>
+        <div id="answers" class="list-group"></div>
+        <button id="c-next-question-btn" class="btn btn-primary mt-4 hidden">Nächste Frage</button>
+    </div>
+    <!-- Guessing questions page -->
+    <div id="guess" class="card p-4 shadow-lg w-100 hidden">
+        <h1 class="text-center mb-4" id="guess-question"></h1>
+        <div id="guess-timer"></div>
+        <div id="guess-div" class="text-center mt-4">
+            <div class="input-group mb-3">
+                <input id="guess-input" type="number" class="form-control" placeholder="Gib einen Schätzwert an..." aria-describedby="basic-addon2" autocomplete="off">
+                <div class="input-group-append">
+                    <button id="confirm-button" class="btn btn-outline-secondary" type="button">Bestätigen</button>
+                </div>
+            </div>
+        </div>
+        <button id="g-next-question-btn" class="btn btn-primary mt-4 hidden">Nächste Frage</button>
+    </div>
+    <!-- Leaderboard page -->
+    <div id="results-page" class="card p-4 shadow-lg w-100 hidden text-center">
+        <h1>Das Leaderboard</h1>
+        <p id="result" class="h4"></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Platz</th>
+                    <th>Spieler</th>
+                    <th>Punkte</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="return" class="btn btn-primary mt-4">Runde verlassen</button>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
